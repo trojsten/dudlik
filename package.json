@@ -1,0 +1,15 @@
+{
+  "name": "dudlik",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "tailwindcss -i ./dudlik/static/tailwind.css -o ./dudlik/static/app.css --watch",
+    "build": "tailwindcss -i ./dudlik/static/tailwind.css -o ./dudlik/static/app.css --minify"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "tailwindcss": "^3.0.24"
+  }
+}

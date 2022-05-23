@@ -1,0 +1,23 @@
+{% extends "_root.html" %}
+
+{% block 'body' %}
+<header class="bg-blue-600 text-white py-3 border-b border-blue-800">
+    <nav class="container mx-auto flex items-baseline gap-4">
+        <a href="/" class="font-bold text-lg">Dudlík</a>
+        <a href="/" class="rounded hover:bg-blue-700 py-0.5 px-2">Moje dudlíky</a>
+    </nav>
+</header>
+
+{% block 'pre_container' %}{% endblock %}
+<div class="container mx-auto">
+    {% block 'content' %}{% endblock %}
+</div>
+
+<footer class="container mx-auto mt-24 border-t pt-5 text-gray-500 flex items-baseline">
+    <span>
+        &copy; Trojsten {% now "Y" %}
+    </span>
+
+    <a href="#" class="underline hover:text-black text-sm ml-auto">Je to open source, urob si pull request.</a>
+</footer>
+{% endblock %}
